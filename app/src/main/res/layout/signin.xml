@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/astudio45">
+
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:id="@+id/LLsignin"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/titleSignup"
+            android:text="@string/Signin"/>
+
+
+        <EditText
+            android:id="@+id/EmailSignup"
+            android:hint="@string/Username"
+            android:background="@drawable/editextbg"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/emailaddress_foreground"
+            android:textColorHint="@color/colorWhiteHint"
+            android:layout_below="@id/titleSignup"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/EmailSignup2"
+            android:hint="@string/SignupEmail"
+            android:background="@drawable/editextbg"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/emailaddress_foreground"
+            android:textColorHint="@color/colorWhiteHint"
+            android:layout_below="@id/EmailSignup"
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/Signin"
+            android:text="@string/SignupButton"
+            android:textAllCaps="false"
+            android:background="@drawable/skipbg"
+            android:textColorHint="@color/colorWhiteHint"
+            android:layout_below="@id/EmailSignup2"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loginwiths"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/LLsignin"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/SignupWithFacebook"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/skipbg"
+                android:text="@string/SignupWithFacebook"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/SignupWithGmail"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/skipbg"
+                android:textColor="@color/colorWhite"
+                android:text="@string/SignupWithGmail"
+                android:layout_toRightOf="@id/SignupWithFacebook"
+                android:layout_margin="5dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

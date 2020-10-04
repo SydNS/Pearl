@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="bottom"
+        android:background="@color/colorWhite"
+        android:id="@+id/appbarlayoutfrag4">
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:id="@+id/toolbarfrag4"-->
+<!--            app:title="this here ha tabs"-->
+<!--            android:background="@color/colorBlack"-->
+<!--            app:titleTextColor="@color/colorWhite"/>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablayoutffrag4"
+            android:background="@color/colorWhite"
+            app:tabTextColor="@color/colorBlack"
+            android:layout_gravity="bottom"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarlayoutfrag4"
+        android:id="@+id/frag4viewpager"/>
+
+</RelativeLayout>

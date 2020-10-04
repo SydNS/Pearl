@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EduTec</string>
+    <string name="alreadyINstalled">PREF_FILE</string>
+    <string name="img1">page 1</string>
+    <string name="img2">page 2</string>
+    <string name="img3">page 3</string>
+    <string name="img4">page 4</string>
+    <string name="skipbtn">skip</string>
+    <string name="next">next</string>
+    <string name="done">done</string>
+    <string name="Signup">signup</string>
+    <string name="SignupName">name</string>
+    <string name="SignupEmail">email address</string>
+    <string name="SignupPhone">phone</string>
+    <string name="AlreadyRegistered">Already Registered ?</string>
+    <string name="SignupWithFacebook">with facebook</string>
+    <string name="SignupWithGmail">with gmail</string>
+    <string name="Signin">sign in</string>
+    <string name="SignupButton">sign up</string>
+    <string name="NotRegistered">Not Registered ?</string>
+    <string name="RegisterHere">register here</string>
+    <string name="Username">username</string>
+    <string name="AlreadyLogin">login here</string>
+    <string name="desire">Desire Outwits Mother Nature</string>
+    <string name="desireContinuation">Many years before the birth of my son, I had written,
+                                “Our only limitations are those we set up in our own
+                                minds.” For the first time, I wondered if that statement
+                                was true. Lying on the bed in front of me was a newly
+                                born child without any physical sign of ears, the natural
+                                equipment of hearing. Even though he might hear and
+                                speak, he was obviously disfigured for life.
+                                What could I do about it? Somehow I would find a
+                                way to transplant into that child’s mind my own burning</string>
+    <string name="confidence">
+                                We build up the feeling of insecurity or security by how we think. If in our
+                            thoughts we constantly fix attention upon sinister expectations of dire events that
+                            might happen, the result will be constantly to feel insecure. And what is even more
+                            serious is the tendency to create, by the power of thought, the very condition we
+                            fear. This salesman actually created positive results by vital thoughts of courage
+                            and confidence through the process of placing the cards before him in his car. His
+                            powers, curiously inhibited by a defeat psychology, now flowed out of a personality
+                            in which creative attitudes had been stimulated.</string>
+    <string name="featuresGot">All The Features We Got</string>
+
+
+</resources>

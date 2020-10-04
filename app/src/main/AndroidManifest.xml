@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Edutec">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/image13_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/image13_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.ActivitiesClasses.HomeBottomNav"></activity>
+        <activity android:name="com.example.ActivitiesClasses.SignupSignin"/>
+        <activity android:name="com.example.ActivitiesClasses.Walkthrough" />
+        <activity android:name="com.example.ActivitiesClasses.SplashIntro" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.ActivitiesClasses.MainActivity"
+            android:parentActivityName=".ActivitiesClasses.SignupSignin">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivitiesClasses.SignupSignin" />
+        </activity>
+
+    </application>
+
+</manifest>

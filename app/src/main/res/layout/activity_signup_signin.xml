@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitiesClasses.SignupSignin">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewflipper">
+        <include layout="@layout/signin"
+            android:id="@+id/vpsignin"/>
+        <include layout="@layout/signup"
+            android:id="@+id/vpsignin"/>
+
+
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/vpnotregistered"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp">
+            <TextView
+                android:id="@+id/Notregistered"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:text="@string/NotRegistered"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/Notyetregisterhere"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/Notregistered"
+                android:text="@string/RegisterHere"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vplogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp">
+            <TextView
+                android:id="@+id/Already"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:text="@string/AlreadyRegistered"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/Alreadyloginhere"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@id/Already"
+                android:text="@string/AlreadyLogin"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

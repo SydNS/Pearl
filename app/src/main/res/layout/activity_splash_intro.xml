@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/introbg"
+    tools:context="com.example.ActivitiesClasses.SplashIntro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introset"
+        android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon1_round"
+        android:id="@+id/hotel"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon6_round"
+        android:layout_toRightOf="@+id/hotel"
+        android:id="@+id/mt"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon3_round"
+        android:layout_below="@id/hotel"
+        android:id="@+id/place"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon5_round"
+        android:layout_below="@id/hotel"
+        android:layout_toRightOf="@id/place"
+        android:id="@+id/intro1"/>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/nearme"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/iconclose"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</RelativeLayout>

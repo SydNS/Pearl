@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frag1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/topbg"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/exitButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/back_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="here"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/plus_foreground" />
+                </RelativeLayout>
+            </Toolbar>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/searchbar"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_margin="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="3dp"
+                android:id="@+id/itemDisplayRCV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/features"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/itemDisplay"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/featuresdesc"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorBlack"
+            android:padding="2dp"
+            android:text="@string/featuresGot"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/featuresdesc">
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/previousVP"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:background="@drawable/arrownext_foreground" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/nextVP"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:background="@drawable/arrowback_foreground" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/featuresViewpager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+            <AdapterViewFlipper
+                android:id="@+id/featuresAdapterViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    <!--this was the initial horizonntal scrollview before i thougt of the
+    recyclerView and settig its layoutmanagere to horizontal, hope it works 7:23am,may10,2020-->
+    <!--<HorizontalScrollView-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:scrollbars="none">-->
+    <!--<RelativeLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal">-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--<include-->
+    <!--    layout="@layout/cardforshow"-->
+    <!--    android:layout_height="100dp"-->
+    <!--    android:layout_width="100dp"-->
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <!--</LinearLayout>-->
+
+    <!--    </RelativeLayout>-->
+    <!--    </HorizontalScrollView>-->
